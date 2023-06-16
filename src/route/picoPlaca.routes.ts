@@ -11,7 +11,7 @@ router.get('/predictor', (req, res) => {
         return res.send({error: error?.details[0]?.message}).status(400);
     }
 
-    const {plate, date } = req.query
+    const {plate, date} = req.query
     const canDrive = picoPlacaService.picoPlacaPrediction({plate: plate as string, date: date as string})
 
     return res.send(canDrive ? 'CIRCULA CON NORMALIDAD' : 'NO CIRCULA')
