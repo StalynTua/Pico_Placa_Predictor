@@ -19,6 +19,12 @@ En ese momento se inicializa el server y cualquier cambio que se haga en el cód
 ```bash
 npm run dev
 ```
-(Replica de npm start) Este comando inicializa el server y cualquier cambio que se haga en el código se va a reflejar en ese momento. Se lo debe usar en el ambiente local.
+Este comando inicializa el server y cualquier cambio que se haga en el código se va a reflejar en ese momento. Se lo debe usar en el ambiente local.
+
+##### test
+```bash
+npm run test
+```
+Este comando ejecuta las pruebas unitarias de Jest para evaluar los casos de prueba declarados en los archivos **.test.ts.
 
 
